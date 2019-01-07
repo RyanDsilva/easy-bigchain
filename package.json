@@ -4,7 +4,13 @@
   "description": "Helper Library to ease out BigChainDB tasks.",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --fix",
     "test": "null"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged --verbose"
+    }
   },
   "repository": {
     "type": "git",
@@ -22,5 +28,15 @@
   "bugs": {
     "url": "https://github.com/knapsackt/easy-bigchain/issues"
   },
-  "homepage": "https://github.com/knapsackt/easy-bigchain#readme"
+  "homepage": "https://github.com/knapsackt/easy-bigchain#readme",
+  "dependencies": {
+    "bigchaindb-driver": "^4.1.0",
+    "bip39": "^2.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "husky": "^1.3.1",
+    "prettier": "^1.15.3",
+    "pretty-quick": "^1.8.0"
+  }
 }
