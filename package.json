@@ -1,0 +1,26 @@
+{
+  "name": "easy-bigchain",
+  "version": "1.0.0",
+  "description": "Helper Library to ease out BigChainDB tasks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "null"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knapsackt/easy-bigchain.git"
+  },
+  "keywords": [
+    "bigchaindb",
+    "blockchain",
+    "bip39",
+    "javascript",
+    "crab"
+  ],
+  "author": "Ryan Dsilva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/knapsackt/easy-bigchain/issues"
+  },
+  "homepage": "https://github.com/knapsackt/easy-bigchain#readme"
+}
