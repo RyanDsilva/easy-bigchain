@@ -1,6 +1,6 @@
 const driver = require('bigchaindb-driver')
 
-module.exports = function(connection, asset, metadata, owner) {
+module.exports = function async(connection, asset, metadata, owner, callback) {
   const transaction = driver.Transaction.makeCreateTransaction(
     asset,
     metadata,
@@ -15,19 +15,12 @@ module.exports = function(connection, asset, metadata, owner) {
     transaction,
     owner.privateKey
   )
-  return new Promise(function(resolve) {
-    resolve(
-      connection
-        .postTransactionCommit(signed)
-        .then(returnedTx => {
-          return {
-            signedTxId: signed.id,
-            returnedTx: returnedTx
-          }
-        })
-        .catch(err => {
-          return new Error('Please check the information entered!' + err)
-        })
-    )
-  })
+  connection
+    .postTransactionCommit(signed)
+    .then(returnedTx => {
+      callback(returnedTx)
+    })
+    .catch(err => {
+      return new Error('Please check the information entered!' + err)
+    })
 }
