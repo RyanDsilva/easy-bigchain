@@ -1,6 +1,6 @@
 {
   "name": "easy-bigchain",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Helper Library to ease out BigChainDB tasks.",
   "main": "index.js",
   "scripts": {
