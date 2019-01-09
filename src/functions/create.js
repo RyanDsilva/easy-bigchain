@@ -15,10 +15,19 @@ module.exports = function(connection, asset, metadata, owner) {
     transaction,
     owner.privateKey
   )
-  connection.postTransactionCommit(signed).then(returnedTx => {
-    return {
-      signedTxId: signed.id,
-      returnedTx: returnedTx
-    }
+  return new Promise(function(resolve) {
+    resolve(
+      connection
+        .postTransactionCommit(signed)
+        .then(returnedTx => {
+          return {
+            signedTxId: signed.id,
+            returnedTx: returnedTx
+          }
+        })
+        .catch(err => {
+          return new Error('Please check the information entered!' + err)
+        })
+    )
   })
 }
