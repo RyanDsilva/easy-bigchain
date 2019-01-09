@@ -1,20 +1,20 @@
-# ⭐️ Easy Bigchain ⭐️
+# ⭐️ Easy Bigchain ⭐️ [![HitCount](http://hits.dwyl.io/knapsackt/easy-bigchain.svg)](http://hits.dwyl.io/knapsackt/easy-bigchain)
 
 ![Stars](https://img.shields.io/github/stars/knapsackt/easy-bigchain.svg?style=for-the-badge)
 ![Issues](https://img.shields.io/github/issues/knapsackt/easy-bigchain.svg?style=for-the-badge)
 ![MIT](https://img.shields.io/github/license/knapsackt/easy-bigchain.svg?style=for-the-badge)
 
-[![HitCount](http://hits.dwyl.io/knapsackt/easy-bigchain.svg)](http://hits.dwyl.io/knapsackt/easy-bigchain)
+> Helper library for BigChainDB tasks. Blockchain Database now with a high level abstracted API. Blockchain, accessible to all!
 
-> Helper library for BigChainDB tasks. Blockchain Database now with a high level abstracted API.
+---
 
-## Installation
+## Installation 💻
 
 ```bash
 $ npm install easy-bigchain --save
 ```
 
-## Usage
+## Usage 👨‍💻
 
 ```js
 import bigchain from 'easy-bigchain'
@@ -78,6 +78,6 @@ bigchain.transferAsset(
 
 ---
 
-## Contributing
+## Contributing ✨
 
 Please send a Pull Request with appropriate documentation and I would be more than happy to merge it! 😄
