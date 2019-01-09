@@ -1,10 +1,13 @@
-# ⭐️ Easy Bigchain ⭐️ [![HitCount](http://hits.dwyl.io/knapsackt/easy-bigchain.svg)](http://hits.dwyl.io/knapsackt/easy-bigchain)
+# ⭐️ Easy Bigchain ⭐️ 
 
 ![Stars](https://img.shields.io/github/stars/knapsackt/easy-bigchain.svg?style=for-the-badge)
 ![Issues](https://img.shields.io/github/issues/knapsackt/easy-bigchain.svg?style=for-the-badge)
 ![MIT](https://img.shields.io/github/license/knapsackt/easy-bigchain.svg?style=for-the-badge)
 
+
 > Helper library for BigChainDB tasks. Blockchain Database now with a high level abstracted API. Blockchain, accessible to all!
+
+[![HitCount](http://hits.dwyl.io/knapsackt/easy-bigchain.svg)](http://hits.dwyl.io/knapsackt/easy-bigchain)
 
 ---
 
@@ -49,10 +52,10 @@ bigchain.createAsset(CONNECTION_OBJECT, ASSET, METADATA, USER, function(
 })
 ```
 
-- CONNECTION OBJECT : Object returned from the _connect()_ function call
-- ASSET : The main data object (immutable)
-- METADATA : Additonal Information to be stored
-- USER : Object returned from the _generateKeypair()_ function call
+- **CONNECTION OBJECT** : Object returned from the _connect()_ function call
+- **ASSET** : The main data object (immutable)
+- **METADATA** : Additonal Information to be stored
+- **USER** : Object returned from the _generateKeypair()_ function call
 
 ### 4. Transfer Asset
 
@@ -69,10 +72,10 @@ bigchain.transferAsset(
 )
 ```
 
-- CONNECTION OBJECT : Object returned from the _connect()_ function call
-- TRANSACTION - The original Transaction from where the asset is to be transferred
-- METADATA : Additonal Information to be stored
-- CURRENT OWNER and NEW OWNER are objects returned from the _generateKeypair()_ function call
+- **CONNECTION OBJECT** : Object returned from the _connect()_ function call
+- **TRANSACTION** : The original Transaction from where the asset is to be transferred
+- **METADATA**: Additonal Information to be stored
+- **CURRENT OWNER and NEW OWNER** are objects returned from the _generateKeypair()_ function call
 
 #### Due to some unexpected behaviour of the _getTransaction()_ function, I have made use of the entire transaction itself. Not efficient but works till that issue is fixed.
 
